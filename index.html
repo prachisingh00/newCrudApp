@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- internal css -->
+     <link rel="stylesheet" href="style.css">
+    <title>crud app by using html css and js</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+        <h1 class="text-center text-danger p-4 fw-bold">crud app using javaScript</h1>
+
+        <div class="row">
+            <div class="bg-white shadow-lg p-4 col-md-12">
+                <div class="d-flex w-100 justify-content-between bg-primary p-2 align-items-center">
+                    <div class="fw-bold text-white">@CODING MY FRIEND</div>
+                    <div>
+                        <button class="btn btn-light">
+                            <input class="input-control search" type="search" placeholder="search">
+                        </button>
+                        <button class="btn btn-danger del-all-btn">
+                            delete all
+                        </button>
+                        <button class="btn btn-success add-btn" data-bs-toggle="modal" data-bs-target="#myModal">
+                            add new User
+                        </button>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <table class="table table-striped text-center">
+                            <thead>
+                                <tr>
+                                    <td>Sr</td>
+                                    <td>Profile</td>
+                                    <td>Name</td>
+                                    <td>Email</td>
+                                    <td>Mobile</td>
+                                    <td>DOB</td>
+                                    <td>Action</td>
+                                </tr>
+                            </thead>
+
+                            <tbody class="reg-list">
+                                <!-- <tr>
+                                <td>1</td>
+                                <td>
+                                    <img src="image/logo.webp" height="30" alt="">
+                                </td>
+                                <td>raja</td>
+                                <td>raja@gmail.com</td>
+                                <td>7524891747</td>
+                                <td>05-02-1998</td>
+                                <td>
+                                    <button class="btn btn-warning">edit</button>
+                                    <button class="btn btn-danger">delete</button>
+                                </td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="modal animate__animated animate__zoomIn animation" id="myModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>add new User</h4>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="" id="register-form">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Name</span>
+                                <input type="text" required class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Email</span>
+                                <input type="email" required class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Phone</span>
+                                <input type="number" required class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">DOB</span>
+                                <input type="date" required class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Password</span>
+                                <input type="password" required class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="file"  class="form-control">
+                            </div>
+                            <div class="input-group mb-3 d-flex justify-content-end w-100">
+                                <button class="btn btn-danger" disabled type="button">Update</button>
+                                <button class="btn btn-primary mx-3" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
